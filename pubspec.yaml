@@ -1,0 +1,46 @@
+name: mosaic_desktop_template
+description: "A desktop-first Flutter game template for PC and Mac titles."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.2.3
+  media_kit: ^1.2.0
+  media_kit_libs_macos_video: ^1.1.4
+  media_kit_libs_windows_video: ^1.0.11
+  media_kit_video: ^1.3.0
+  window_manager: ^0.5.1
+  supabase_flutter: ^2.12.4
+  flutter_dotenv: ^6.0.1
+  media_kit_libs_ios_video: ^1.1.4
+  media_kit_libs_android_video: ^1.3.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env
+    - assets/system/audio/
+    - assets/system/images/
+    - assets/system/images/homescreen/
+    - assets/system/video/
+    - assets/game/episodes/episode_1/episode_1_images/
+    - assets/game/episodes/episode_1/episode_1_video/
+
+  fonts:
+    - family: Orbitron
+      fonts:
+        - asset: assets/system/fonts/Orbitron-Regular.ttf
+        - asset: assets/system/fonts/Orbitron-Bold.ttf
+          weight: 700
