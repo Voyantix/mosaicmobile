@@ -1,4 +1,4 @@
-# Mosaic Desktop Template
+# Mosaic Mobile Template
 
 A desktop-first Flutter template for individual PC and Mac game titles.
 
